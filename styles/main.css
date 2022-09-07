@@ -1,0 +1,181 @@
+* {
+  margin: 2;
+  padding: 0;
+}
+
+@media all and (max-width: 320px) {
+  .about-myself {
+    font-family: monospace;
+    font-size: 35px;
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+    color: coral;
+  }
+}
+
+.header-intro {
+  display: flex;
+  margin: 2px 10px 2px 2px;
+  font-family: 'Source Code Pro', monospace;
+  justify-content: space-between;
+}
+
+.home-page {
+  text-decoration: none;
+  color: black;
+}
+
+
+.mid-section {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.mid-section {
+  padding: 10px 10px 200px 10px;
+}
+
+.about-myself,
+.learning-quote {
+  font-family: monospace;
+  font-size: 35px;
+  padding: 5% 5% 5% 5%;
+  text-align: center;
+}
+
+.learning-quote {
+  background-image: url(../images/bg.jpeg);
+  background-color: red;
+  background-blend-mode: screen;
+  height: auto;
+  width: auto;
+  opacity: 0.3;
+}
+
+.quote-text {
+  font-size: 20px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.blog-tiles {
+  display: flex;
+  justify-content: center;
+
+}
+
+.sprint-1,
+.sprint-2,
+.sprint-3,
+.sprint-4,
+.sprint-5 {
+  background: #c9aef1;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+
+}
+
+.button {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #5c4283;
+}
+
+.button:hover {
+  box-shadow: inset 100px 0 0 0;
+  color: white;
+}
+
+.footer-container-index {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  list-style: none;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* .scroll{
+  margin: 10px 0px 0px 0px;  
+  font-family: 'Source Code Pro', monospace;
+  color: black;
+  text-decoration: none;
+} */
+
+.home-page:hover {
+  color: gray;
+}
+
+
+
+/* Style for sprint-2-html-css.html */
+
+
+.container {
+  padding: 2rem 2rem 2rem 2rem;
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+.nav-list,
+.footer-nav-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding-right: 2rem;
+  list-style: none
+}
+
+.nav-link,
+.footer-nav-link {
+  text-decoration: none;
+  color: #b38bef;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.sub-topic,
+.topic-text {
+  color: #746f7a;
+  font-family: 'Source Code Pro', monospace;
+  margin-left: -1px;
+}
+
+.sub-topic {
+  margin-top: -18px;
+  margin-left: 0.5px;
+  color: #764db4;
+}
+
+.blog-paragraph,
+.content-headings {
+  color: #171718;
+  font-family: 'Source Code Pro', monospace;
+  padding: 2px 2px 2px 2px;
+}
+
+.example {
+  max-height: 776px;
+  max-width: 100%;
+  padding: 20px 2px 20px 0px;
+
+}
+
+.content-headings {
+  color: #9560e4;
+}
+
+.footer-nav-link,
+.nav-link {
+  border: 2px solid #9560e4
+}
+
+.footer-nav-link:hover,
+.nav-link:hover,
+.nav-link:focus {
+  background: #9560e4;
+  color: white;
+}
+
+.footer-nav-link,
+.nav-link {
+  padding: 5px 5px 5px 5px;
+}
