@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@1&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400&display=swap">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Blog - CSS Concepts</title>
+</head>
+
+<body class="sprint-2-tech">
+  <header>
+    <nav>
+      <div class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#blog-links" class="nav-link">Blogs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container" id="container-top">
+    <div class="topic-heading">
+      <h1 class="topic-text">Technical Blog - CSS Concepts</h1>
+      <h4 class="sub-topic"> Inline and Inline Blocks</h4>
+    </div>
+
+    <div class="blog-content">
+      <p class="blog-paragraph"> In the HTML and CSS world, almost everything is a block. Let’s take an example below-
+        <br>
+        <img class="example" src="../images/sprint-2-tech-first-image.png" alt="codepen html and css palyground">
+        Here we have added four "p" tags and one "a" and given an outline of 2px to distinguish between each blocks and
+        can see four blocks with a
+        red outline. <br> <br>
+        Some key points from the example above: <br> <br>
+        1. Block level elements always stack on top of each other even if the have space to go adjacent to each other
+        <br> <br>
+        2. The default width of a block element is 100%
+      </p>
+
+      <p class="blog-paragraph">
+        Let’s try to change the width of one of the blocks i.e "p" and you’ll see that the blocks still don’t go next to
+        each other and always stay on the same line and on top of each other. <br>
+        <img class="example" src="../images/sprint-2-tech-second-image.png" alt="codepen html and css playground"> <br>
+      </p>
+
+      <h2 class="content-headings">Inline</h2>
+      <p class="blog-paragraph">
+        Inline elements are used when your requirement is to stay on the same line, for instance, adding a link to a
+        different page within a text or statement.
+        From the example above, let’s add a style rule `outline: 2px solid blue` to the "a" element and see what
+        difference it makes.
+        <img class="example" src="../images/inline-outline-2px.png" alt="codepen html and css playground">
+      </p>
+
+      <p class="blog-paragraph">
+        <strong>Key points to note:
+        </strong> <br> <br>
+        1. The outline we added to "a" is only taking the width of the content. This is a big distinction between block
+        level and inline where a block element will always force a new line. <br><br>
+        2. Inline elements can’t have top-bottom paddings or margins but can add left-right margins or paddings,
+        however, the behaviour will be confusing. Also, adding top or bottom margin values doesn’t have any affect on
+        the element. <br><br>
+        Below example shows how the link above shows with spaces added.
+
+        <img class="example" src="../images/inline-margins-paddings.png" alt="codepen html and css playground">
+      </p>
+
+      <p class="blog-paragraph">
+        Now the question arises, what if we need such an inline element where we want to add a margin or padding that
+        actually works? <br><br>
+        - - > The answer to the above question is Inline-Block! <br> <br>
+      </p>
+
+      <h2 class="content-headings">Inline - Block</h2>
+
+      <p class="blog-paragraph">
+        Let’s add a couple of "a" elements to our example above and we are going to make them look like buttons. I have
+        added a padding of top and right of 20px and 25px respectively. Here is it what it looks like:
+
+        <img class="example" src="../images/inline-buttons.png" alt="codepen html and css playground">
+        If you take a closer look at the example above, the margin-top has no affect on the elements. <br> <br>
+        Now lets add a style rule of “display: inline-block” to our CSS file and see how that changes our webpage
+
+        <img class="example" src="../images/display-inline-block.png" alt="codepen html and css playground">
+        Key points to note: <br><br>
+
+        1. The margin of 100px is being respected <br><br>
+        2. Padding of 20px-top and 25px-right is applying <br><br>
+        3. The layout looks better than before where we didn’t add “display:inline-block” rule <br><br>
+      </p>
+
+      <h2 class="content-headings">Why Inline-Block?</h2>
+      <p class="blog-paragraph">
+        One of the many use cases of an inline-block would be to add multiple buttons in a row. This is a very common
+        design pattern for a navigation and these buttons are links to some other pages both internal or external.
+        There are other ways we can achieve what inline-block does, like “display:flex”, however, it becomes a bit
+        complicated for something that can be achieved with a single style rule “dispaly: inline-block”. <br><br>
+      </p>
+
+      <h2 class="content-headings">Conclusion</h2>
+      <p class="blog-paragraph">
+        For display; Inline-block, the width and height style rules applied to an element are respected like they would
+        for a block level element.
+        Where as for display: inline, only the right and left spaces (margin and padding) can be added, however, that
+        too will have some design issues and is not recommended.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <nav>
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#container-top">Jump to top of page</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="../index.html">Blog Home</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
