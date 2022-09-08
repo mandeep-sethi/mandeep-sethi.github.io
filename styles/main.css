@@ -3,14 +3,18 @@
   padding: 0;
 }
 
-@media all and (max-width: 320px) {
+@media (max-width: 320px) or (max-width: 768px) or (min-width:1200px) {
   .about-myself {
     font-family: monospace;
     font-size: 35px;
     padding: 5% 5% 5% 5%;
     text-align: center;
-    color: coral;
+    color: rgb(172, 157, 23);
   }
+}
+
+#dev-a {
+  color: rgb(254, 45, 45);
 }
 
 .header-intro {
