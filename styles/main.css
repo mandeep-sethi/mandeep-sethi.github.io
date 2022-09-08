@@ -139,7 +139,7 @@
 
 .sub-topic,
 .topic-text {
-  color: #746f7a;
+  color: #414E49;
   font-family: 'Source Code Pro', monospace;
   margin-left: -1px;
 }
@@ -155,6 +155,7 @@
   color: #171718;
   font-family: 'Source Code Pro', monospace;
   padding: 2px 2px 2px 2px;
+  line-height: 1.6;
 }
 
 .example {
@@ -183,4 +184,16 @@
 .footer-nav-link,
 .nav-link {
   padding: 5px 5px 5px 5px;
+}
+
+
+
+/* SPRINT 2 BLOG - LEARNING PLAN */
+
+
+#container-top-lp {
+  max-width: 800px;
+  margin-top: 5em;
+  margin: 0 auto;
+  padding-top: 4em;
 }
