@@ -152,7 +152,7 @@
 
 .blog-paragraph,
 .content-headings {
-  color: #171718;
+  color: #66666f;
   font-family: 'Source Code Pro', monospace;
   padding: 2px 2px 2px 2px;
   line-height: 1.6;
@@ -191,9 +191,18 @@
 /* SPRINT 2 BLOG - LEARNING PLAN */
 
 
-#container-top-lp {
+#container-top-lp,
+#container-top-idv {
   max-width: 800px;
   margin-top: 5em;
   margin: 0 auto;
   padding-top: 4em;
 }
+
+.blog-title {
+  color: #171718;
+}
+
+/* SPRINT 1 - IDENTITY VALUES AND STRENGTH 
+Just added the id #container-top-idv above to have 
+the same style as #container-top-idv */
