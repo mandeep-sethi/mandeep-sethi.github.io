@@ -134,10 +134,8 @@
   border-radius: 15px;
   color: #586a63;
   padding: 10px 20px;
-  text-align: right;
   text-decoration: none;
   padding: 10px 20px;
-  text-align: right;
   font-size: 18px;
 }
 
@@ -254,4 +252,21 @@
 
 .blog-title {
   color: #171718;
+}
+
+
+/* TE_HOUTAEWA_TEMPLATE */
+
+.container-tht {
+  display: grid;
+  grid-template-columns: 1fr min(65ch, 100%) 1fr;
+}
+
+.container-tht * {
+  grid-column: 2;
+}
+
+.nav {
+  max-width: 100%;
+  grid-column: 1 / 4;
 }
