@@ -1,25 +1,24 @@
-* {
+body {
   margin: 2;
   padding: 0;
-}
-
-.index-body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  background: rgb(237, 233, 233);
 
 }
 
-#bg-index {
-  background-image: url(../images/cool-bg.jpg);
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
+.container-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
 }
+
+.container-index * {
+  grid-column: 2;
+}
+
+.header-index {
+  grid-column: 1 / 4;
+}
+
 
 @media (max-width: 320px) or (max-width: 768px) or (min-width:1200px) {
   .about-myself {
@@ -44,7 +43,7 @@
 
 .home-page {
   text-decoration: none;
-  color: rgb(32, 208, 208);
+  color: #586a63;
   font-size: 25px;
 }
 
@@ -66,7 +65,7 @@
   border: solid;
   border-color: lightgray;
   border-radius: 2em;
-  max-width: 1000px;
+
 }
 
 .learning-quote {
@@ -83,13 +82,6 @@
   font-family: 'Source Code Pro', monospace;
 }
 
-
-.blog-entry-title {
-  display: flex;
-  justify-content: center;
-  padding-top: 2%;
-}
-
 .content-heading-index {
   display: flex;
   color: black;
@@ -102,6 +94,11 @@
   padding: 20px 20px 20px 20px;
   font-family: 'Source Code Pro', monospace;
   text-decoration: none;
+}
+
+.content-heading-index {
+  display: flex;
+  justify-content: center;
 }
 
 .blog-home-link-text {
