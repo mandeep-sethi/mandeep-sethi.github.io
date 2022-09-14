@@ -18,17 +18,6 @@ body {
   grid-column: 1 / 4;
 }
 
-
-@media (max-width: 320px) or (max-width: 768px) or (min-width:1200px) {
-  .about-myself {
-    font-family: monospace;
-    font-size: 35px;
-    padding: 5% 5% 5% 5%;
-    text-align: center;
-    color: white;
-  }
-}
-
 #dev-a {
   color: rgb(254, 45, 45);
 }
@@ -267,3 +256,29 @@ body {
   max-width: 100%;
   grid-column: 1 / 4;
 }
+
+
+@media screen and (max-width: 1200px) {
+  body {
+    background: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: rgb(229, 219, 219);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background: rgba(242, 242, 98, 0.134);
+  }
+}
+
+
+/*Use media queries in a CSS 
+file to change the page layout
+ for mobile (320px), 
+ tablet (768px) 
+ and desktop (1200px+) screen sizes */
