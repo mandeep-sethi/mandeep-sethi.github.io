@@ -229,8 +229,9 @@ body {
 
 #container-top-lp,
 #container-top-idv,
-#container-top-ei {
-  max-width: 650px;
+#container-top-ei,
+#container-top-dom {
+  max-width: 750px;
   margin-top: 5em;
   margin: 0 auto;
   padding-top: 4em;

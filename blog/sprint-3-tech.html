@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@1&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400&display=swap"
+    />
+    <title>JavaScript Fundamentals</title>
+  </head>
+
+  <!-- NAV PAN -->
+  <body>
+    <header>
+      <nav>
+        <div class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./blog-main.html" class="nav-link">Blogs</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- BLOG CONTENT -->
+    <div id="container-top-dom">
+      <div class="blog-content">
+        <h1 class="topic-text">Technical Blog - JS Fundamentals</h1>
+        <h4 class="blog-title topic-text">HTML CSS JS</h4>
+        <p class="blog-paragraph">
+          It may be a bit of a rogue analogy, but I like to think of HTML, CSS
+          and JS in terms of a home appliances - in particular, a refrigerator.
+          <br />
+          <br />
+          A fridge / refrigerator has a basic function of keeping the food cold
+          so that it lasts longer. In terms of its structure, it’s pretty much a
+          square or rectangle with a compressor that provides cooling. This can
+          be our <b>HTML</b> part. <br />
+          <br />
+          Now the design of the structure (fridge) can be enhanced by giving it
+          a beautiful paint or some floral vinyl. The interior can also be
+          customised with accessories to hold the fresh fruits and veges. This
+          part will be handled by <b>CSS</b>. <br /><br />
+          The fridge becomes more usable and intuitive when additional features
+          like a light bulb that turns on automatically once the fridge door is
+          opened and turns back off once it closed. Other cool features would be
+          setting a certain temperature for the fresh fruit and veges section,
+          adding a beep when the door is left open for more than 30 seconds etc.
+          All these interactive functionalities added to the fridge are handled
+          by JavaScript.
+        </p>
+        <br />
+
+        <h4 class="blog-title topic-text">Contorl FLow and Loops</h4>
+        <p class="blog-paragraph">
+          Our Javascript code by default is executed from top to bottom, line by
+          line, however, we can change this with <em>conrtol flow</em>. Control
+          flow allows our program to make decisions about what code is executed
+          and when. JavaScript contains conditional statements and
+          <em>loops</em> that enables us to control the flow our code, thus,
+          making our application more dynamic and interactive. <br /><br />
+
+          Let’s take an example of driving to the supermarket for a grocery run.
+          The normal would be get up, take the car/bike, drive to the
+          supermarket, buy your grocery and drive back home. What if we add some
+          questions to this <br />
+          <br />
+
+          1. Check if you have enough supplies for the week <br />
+          <br />
+          2. If answered yes, do not go to the supermarket, if no, look for the
+          grocery list <br />
+          <br />
+          3. Do you have a list of the groceries you are buying? <br />
+          <br />
+          4. If yes - lets go to the supermarket <br />
+          <br />
+          5. If no, let’s make a list. <br /><br />
+          6. let’s write the list based on the number of items you wan to add.
+          <br /><br />
+
+          You’ll then search your pantry for products to be added in the list
+          one at a time in the relevant cabinet drawers - <em>loops</em> All the
+          above <em>conditions</em> and <em>loops</em> can change the default
+          flow of buying groceries and can result in an organised visit to the
+          supermarket
+        </p>
+        <br />
+
+        <h4 class="blog-title topic-text">What is the DOM</h4>
+        <p class="blog-paragraph">
+          In Web development, we have three different languages HTML, CSS and JS
+          that work together to make things happen. The DOM( Document Object
+          Model) represents the content of an HTML document as a tree structure
+          and acts an API or a programming interface which can be used to read
+          or update the contents of the document. The most commonly used
+          programming language for this JS. The DOM is the real source of truth
+          for a website that we see at any given moment. <br />
+          <br />
+          As an example, I have added a div element to the <em>body</em> of the
+          page by first creating it and then appending it. I have also added a
+          text to it by using the <em>.innerHTML</em> sub-object. Please see the
+          code snipet below: <br />
+          <br />
+          <q
+            >const body = document.body <br />
+            const div = document.createElement('div') <br />
+            body.append(div) <br />
+            div.innerHTML = 'Hello World'</q
+          >
+        </p>
+        <br />
+
+        <h4 class="blog-title topic-text">
+          Difference between accessing data from Arrays and Objects
+        </h4>
+        <p class="blog-paragraph">
+          Arrays and Objects are both mutable variables (things that change in
+          value when you use them) and are used to store values. Think of an
+          _object_ as a car that has a set of characterstics like, make, model,
+          engine-size etc. In _objects_, these characteristics are called
+          properties which consist of a _key_ and a _value_. <br />
+          <br />
+          For example, you can declare an object like:
+          <q>let car = {make: ‘Ford’, model: ‘Everest’}</q> <br /><br />
+          To access the <em>model Key</em> from the <em>car object</em>, we use
+          <em>car.model</em> or <em>car[model]</em>. <br /><br />
+          An Array on the other side can be used to store a list of multiple
+          items where the order is important . <br /><br />
+          For example, you can declare an array like:
+          <q>let car = [‘Everest’, ‘Fiesta’’]</q> <br /><br />
+          To access the car <em>Fiesta</em> from the car array, you can use the
+          index (numerical position in the list) of the value we want i.e.
+          car[1] as the first value starts from 0 index.
+        </p>
+        <br />
+
+        <h4 class="blog-title topic-text">Functions</h4>
+        <p class="blog-paragraph">
+          A function consist of a set of lines or instructions that are
+          performed when the function is invoked or called. There are a number
+          of advantages of using functions in JavaScript and for this reason
+          they are regarded as one of the fundamental building blocks in
+          JavaScript. The main advantages are as follows: <br /><br />
+          1. Avoids repetition of code i.e. promotes code reusability
+          <br /><br />
+          2. Makes your program readable <br /><br />
+          3. You can divide your problems into smaller chunks of functions
+        </p>
+        <br />
+      </div>
+    </div>
+
+    <!-- FOOTER NAV PAN -->
+    <footer>
+      <nav>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#container-top-dom"
+              >Jump to top of page</a
+            >
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="./blog-main.html">Blog Home</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
