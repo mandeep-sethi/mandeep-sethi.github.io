@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@1&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400&display=swap" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Blog - Problem Solving</title>
+</head>
+
+<body>
+  <main class="container-tht">
+    <div class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="../blog/blog-main.html" class="nav-link">Blogs</a>
+        </li>
+      </ul>
+    </div>
+    <h1 class="topic-text">Technical Blog - Problem Solving</h1>
+    <h3 class="blog-title topic-text">21 September 2022</h3>
+
+    <h2 class="blog-title topic-text">Blocked on a simple problem</h2>
+    <p class="blog-paragraph">
+      I got stuck on the very last part of JS - Gradebook stretch material. As
+      it didn’t have any instructions, at first it looked easy but slowly I
+      got stuck going down one train of thought. I had to read the tests to
+      understand what exactly is happening and what I should expect from the
+      function performed. Even after analysing the tests, I couldn’t figure it
+      out.
+    </p>
+    <p class="blog-paragraph">
+      The problem was adding the property “testScores” to the student's object
+      without defining the “students” object as a part of the “gradebook”
+      object. I started from the basics and tried to understand the concept of
+      objects and did some exercises on objects, just to get familiar with the
+      “.” and “[]” notations as the problem that I was seeing was with
+      accessing and adding properties to an object. However, the task still
+      didn’t click with me, so I left it and moved on to the next part in the
+      hope of learning some more difficult concepts and then coming back to a
+      simpler one with a different approach.
+    </p>
+    <p class="blog-paragraph">
+      After, completing the other JS exercises, I came back to it with a fresh
+      mind and a new approach and broke down the problem into smaller parts. I
+      used “console.log” to print every single output I could on the screen to
+      understand where the error was coming from teamed up with some
+      pseudocode on my notebook and then slowly progressed towards success,
+      yay! It was a frustrating process, to begin with, however, it was a good
+      lesson in problem-solving where I used different techniques like
+      starting fresh, debugging, writing pseudocode etc.
+    </p>
+    <h2 class="blog-title topic-text">Solved a Problem Elegantly</h2>
+    <p class="blog-paragraph">
+      By using the problem-solving techniques efficiently and more often after
+      the experience I had above when I got stuck, I would say that I was in a
+      much better place when solving this new problem.
+    </p>
+    <p class="blog-paragraph">
+      This was working on the JS - Built-in Methods exercise where a function
+      takes a string and returns it by removing the word “buzz” from it. I
+      started this one by writing the pseudocode first which I had to change
+      later as the problem that arose wasn’t part of it (as expected), but, it
+      really helped. I started by using the “map()” method that would iterate
+      through the array (string converted to an array) and then based on the
+      condition returns a new array.
+    </p>
+    <p class="blog-paragraph">
+      The problem I noticed was that the “map()” was, it replaced the word
+      “buzz” with a space “ “ element in the array and when converting it back
+      to string (using join()), it added an extra and unnecessary space
+      between the words. I used “console.log” a lot and finally figured out
+      that part and looked up a new built-in method called “filter()” which
+      only adds the element to the new array if meets the condition and
+      returns a new array.
+    </p>
+
+    <h2 class="blog-title topic-text">
+      My reflection on the problem-solving techniques
+    </h2>
+    <p class="blog-paragraph">
+      <span class="inline-heading">Pseudocode</span>
+      I’m used to taking notes and writing my understanding in a notebook as
+      that’s how I feel confident about my learning. I have added this to my
+      coding journey as well and write Pseudocode either on a piece of paper
+      or type it in the code editor.
+    </p>
+    <p class="blog-paragraph">
+      <span class="inline-heading">Trying something</span>
+      I’m used to taking notes and writing my understanding in a notebook as
+      that’s how I feel confident about my learning. I have added this to my
+      coding journey as well and write Pseudocode either on a piece of paper
+      or type it in the code editor.
+    </p>
+    <p class="blog-paragraph">
+      <span class="inline-heading">Rubber ducky method</span>
+      I do talk to myself and sometimes my partner and take notes when
+      debugging. She also has a computer science background so it becomes easy
+      for me to explain and expect interesting questions.
+    </p>
+
+    <p class="blog-paragraph">
+      <span class="inline-heading">Reading error messages</span>
+      Sometimes, I find the JS error messages do require some familiarity with
+      the concepts before you can understand them. But, they definitely help
+      you narrow down the issue once you get your head around them.
+    </p>
+    <p class="blog-paragraph">
+      <span class="inline-heading">Console.logging</span>
+      A life-saving technique when it comes to debugging and I use it to
+      display every input that goes to the function and output that the
+      function returns
+    </p>
+    <p class="blog-paragraph">
+      <span class="inline-heading">Googling</span>
+      I move to google after I have done an extensive search in discord and
+      slack channels about the issue I’m facing. And 90% of the time, I get
+      the answer from useful websites like stackOverflow and freeCodecamp.
+    </p>
+    <p class="blog-paragraph">
+      <span class="inline-heading">Asking your peers for help</span>
+      After I have looked up in discord + google with no luck, I ask a
+      question in the relevant channel with all the details including steps
+      tried, resources looked up etc.
+    </p>
+    <p class="blog-paragraph">
+      <span class="inline-heading">Asking coaches for help</span>
+      I feel confident reaching out to our facilitators about an issue whether
+      it be core or tech related as they are very approachable.
+    </p>
+    <p class="blog-paragraph">
+      <span class="inline-heading">Improving your process with reflection</span>
+      I didn’t have a reflection as a part of my learning before joining Dev
+      Academy. However, I have now made it a vital part to reflect on every
+      single topic that I cover. This really helps retain the information in
+      your brain and makes you think and relate to the concepts if you have
+      had any earlier experience.
+    </p>
+    <div class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="../blog/blog-main.html" class="nav-link">Blogs</a>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>

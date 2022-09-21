@@ -246,11 +246,18 @@ body {
 
 .container-tht {
   display: grid;
-  grid-template-columns: 1fr min(65ch, 100%) 1fr;
+  grid-template-columns: 1fr min(90ch, 100%) 1fr;
 }
 
 .container-tht * {
   grid-column: 2;
+}
+
+.inline-heading {
+  background-color: #586a63;
+  color: white;
+  padding: 2px 2px 2px 4px;
+  font-style: unset
 }
 
 .nav {
